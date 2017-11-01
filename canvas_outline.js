@@ -36,7 +36,7 @@ var background = new Image();
 background.src = "images/canvas_texture.png";
 document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
-
+console.log('Game Started');
 //for ball movement....
 var ctx1 = canvas.getContext("2d");
 function keyDownHandler(e) {
