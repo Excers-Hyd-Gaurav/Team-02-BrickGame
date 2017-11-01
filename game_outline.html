@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>game outline</title>
+   <style>
+   body{
+              background-repeat: no-repeat !important;
+			  background-size:1370px 700px;
+			  padding:25px;
+       }
+    #myCanvas {  display: block; margin: 0 auto;z-index:-2;}
+		#first{padding:4px 0px 15px 55px;}
+		#score{padding:4px 0px 15px 0px;}
+		#middle{padding:4px 0px 15px 200px;}
+		#life{padding:4px 0px 15px 0px;}
+		#last{ padding:4px 0px 15px 200px;}
+		#highest_score{ padding:4px 0px 15px 0px;}
+			 tr,td,b{
+			 font-family:Arial;
+			 font-size:16px;
+			 color:white;
+			 } 		 
+	 #round_corner
+			 {
+				border-radius: 25px;
+				border:1px solid red;
+				background: #AB032D !important;
+				height:35px;
+				margin-left:250px;
+				margin-right:260px;
+			 }
+			 #retry{
+			 position:absolute;
+			padding:270px 0px 0px 590px;
+			 }
+			 #play_again{
+			  position:absolute;
+			  padding:270px 0px 0px 590px;
+			 }
+			 
+    </style> 
+
+</head>
+<body background="images/bricks_break_wallpaper.jpg">
+<div id="round_corner">
+<table>
+<tr><td id="first"><b>Score:</td></b><td><div id="score"></div></td>
+<td id="middle"><b>Chances left:</b></td><td><div id="life">3</div></td>
+<td id="last"><b>High Score:</b></td><td ><div id="highest_score">0</div></td></tr>
+</table>
+</div><br>
+<img id="brick" width="60" height="20" src="images/brick3.png" alt="my_brick" hidden>
+<img id="texture" width="5" height="5" src="yellow_canvas_texture.png" alt="my_brick" hidden>
+<img id="retry" width="150" height="35" src="images/retry2.png" onClick="reload1()" hidden=true/>
+<img id="slide_bar" width="100" height="14" src="images/lands.jpg" hidden=true/>
+<img id="color_brck" width="60" height="20" src="images/Star.png" hidden=true/>
+<img id="play_again" onClick="reload1()" src="images/play_again.png" width="140" height="35" hidden=true/>
+<canvas id="myCanvas" width="826" height="530">
+</canvas>
+<audio id="myAudio">
+  
+  <source src="images/audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script src="canvas_outline.js"></script>
+</body>
+</html>
